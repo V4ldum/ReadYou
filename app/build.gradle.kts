@@ -38,8 +38,8 @@ android {
         applicationId = "me.ash.reader"
         minSdk = 26
         targetSdk = 34
-        versionCode = 43
-        versionName = "0.15.2"
+        versionCode = 44
+        versionName = "0.15.3"
 
         buildConfigField(
             "String",
@@ -121,10 +121,9 @@ dependencies {
 
     // Compose
     implementation(libs.compose.html)
-    implementation(platform(libs.compose.bom))
-    implementation(platform(libs.androidx.compose.bom))
+    implementation(platform(libs.compose.bom.alpha))
     implementation(libs.androidx.ui.graphics)
-    androidTestImplementation(platform(libs.compose.bom))
+    androidTestImplementation(platform(libs.compose.bom.stable))
     implementation(libs.compose.animation.graphics)
     implementation(libs.compose.ui)
     implementation(libs.compose.ui.util)
@@ -144,7 +143,7 @@ dependencies {
     // Hilt
     implementation(libs.hilt.work)
     implementation(libs.hilt.android)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(platform(libs.compose.bom.stable))
     debugImplementation(libs.compose.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     ksp(libs.hilt.android.compiler)
