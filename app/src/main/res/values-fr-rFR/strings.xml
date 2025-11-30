@@ -359,6 +359,5 @@
     <string name="open_in_browser_desc">Ouvrir les articles dans le navigateur</string>
     <string name="parse_full_content_desc">Récupérer les articles complets depuis les pages wev</string>
     <string name="enable">Activer</string>
-    <string name="disable">Désactiver</string>
     <string name="group_configuration_description">Configurer \"%1$s\" pour les flux dans \"%2$s\"</string>
 </resources>
